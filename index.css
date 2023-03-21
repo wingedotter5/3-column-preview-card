@@ -6,6 +6,13 @@
   --very-light-gray: hsl(0, 0%, 95%);
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -23,6 +30,8 @@ main {
 
 .column {
   padding: 10%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 .column > h2 {
   font-family: "Big Shoulders Display", cursive;
@@ -40,6 +49,7 @@ main {
   border: 2px solid transparent;
   cursor: pointer;
   max-width: 200px;
+  margin-top: 40px;
 }
 .column > button:hover {
   color: var(--very-light-gray);
